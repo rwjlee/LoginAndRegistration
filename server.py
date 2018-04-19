@@ -3,7 +3,7 @@ from flask import Flask, session, request, redirect, render_template, flash, url
 from db.data_layer import get_user_by_email, get_user_by_id, create_user
 
 app = Flask(__name__)
-app.secret_key = '8118d0875ad5b6b3ad830b956b111fb0'
+
 
 EMAIL_REGEX = re.compile(r'^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$')
 
